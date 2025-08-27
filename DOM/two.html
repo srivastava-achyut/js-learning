@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model Learning with Chai and Code</title>
+</head>
+<body style="background-color:#212121;color:beige">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">thursday</div>
+        <div class="day">Friday</div>
+    </div>
+</body>
+<script>
+    const parent=document.querySelector('.parent')
+    //console.log(parent);
+   // console.log(parent.children[1].innerHTML)
+    for (let index = 0; index < parent.children.length; index++) {
+        const element = parent.children[index].innerHTML;
+        console.log(element); //Monday Tuesday Thursday  Friday
+        
+    }
+</script>
+</html>
