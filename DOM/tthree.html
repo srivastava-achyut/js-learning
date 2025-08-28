@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body style="background: color #212121;color: #fff;">
+    
+
+</body>
+<script>
+  const div=  document.createElement('div');
+    console.log(div);
+    div.classname="main";
+    div.id=Math.random()*10+1; //<div id="0.5491512946455911"></div> give random value 
+    div.setAttribute("title","generate title")
+    div.style.backgroundColor="green";
+    div.style.padding="12px"
+    div.innerText="cahi aur code"
+   const addtext= document.createTextNode("Chai aur Code");
+   div.appendChild(addtext);
+   document.body.appendChild(div);
+</script>
+</html>

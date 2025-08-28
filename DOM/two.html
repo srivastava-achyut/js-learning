@@ -8,7 +8,9 @@
 <body style="background-color:#212121;color:beige">
     <div class="parent">
         <div class="day">Monday</div>
+    <!-- //this is a comment -->
         <div class="day">Tuesday</div>
+
         <div class="day">thursday</div>
         <div class="day">Friday</div>
     </div>
@@ -17,10 +19,21 @@
     const parent=document.querySelector('.parent')
     //console.log(parent);
    // console.log(parent.children[1].innerHTML)
-    for (let index = 0; index < parent.children.length; index++) {
-        const element = parent.children[index].innerHTML;
-        console.log(element); //Monday Tuesday Thursday  Friday
+    // for (let index = 0; index < parent.children.length; index++) {
+    //     const element = parent.children[index].innerHTML;
+    //     console.log(element); //Monday Tuesday Thursday  Friday
         
-    }
+    // }
+    // parent.children[1].style.color="orange";//Tuesday will be written in orange
+    const dayone=document.querySelector('.day')
+  //  console.log(dayone)                  //<div class="day">Monday</div>
+   // console.log(dayone.parentElement);      //<div class="parent">
+        // <div class="day">Monday</div>
+        // <div class="day">Tuesday</div>
+        // <div class="day">thursday</div>
+        // <div class="day">Friday</div>
+   // </div>
+    //console.log(dayone.nextElementSibling);   //<div class="day">Tuesday</div>
+    console.log("NODES: ",parent.childNodes); //9 nodes because an enter is after each div
 </script>
 </html>
