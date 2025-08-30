@@ -1,7 +1,7 @@
 # Projects related to DOM
 
 ## project link
-[Click here]()
+[Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=2-BMICalculator%2Fstyle.css)
 ## project1
 ```javascript
 const buttons=document.querySelectorAll('.button')
