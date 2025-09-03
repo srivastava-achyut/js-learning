@@ -149,7 +149,6 @@ newgamebutton.addEventListener('click',function(e){
     userinput.removeAttribute('disabled')
     startover.removeChild(p)
     playgame=true
-
 })
 }
 
