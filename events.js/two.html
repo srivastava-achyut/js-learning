@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello welcome to the world of coding</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    setTimeout(function(){
+        
+console.log("hitesh");  //taks 2 sec time to print hitesh
+    },2000);
+  //document.querySelector('h1').innerHTML="best javascript learning platform"
+  const changeText=function(){
+    document.querySelector('h1').innerHTML="best javascript learning "
+  }
+const clear=  setTimeout(changeText,4000)
+//clearTimeout(clear)
+document.querySelector('#stop').addEventListener('click',function(e){
+  clearTimeout(clear)
+  console.log("stopped")
+})
+</script>
+</html>
