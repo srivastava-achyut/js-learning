@@ -55,6 +55,42 @@ let error=true;
     }
     },1000)
 })
-// async function consumepromisefive({
-//        const responseawait promisefive
-// })
+promisefour
+    .then((user) => {
+        console.log(user);
+        return user.username;
+    })
+    .then((username) => {
+        console.log(username);
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
+    async function consumerfive() {
+  try {
+    const response = await promisefive;
+    console.log(response);
+  } catch (error) {
+    console.log(error);
+  }
+}
+consumerfive();
+
+async function getAlluser(){
+try {
+     const response= await  fetch('https://randomuser.me/api/')
+ const data=await response.json()
+ console.log(data);
+} catch (error) {
+    console.log("E:",error);
+}
+}
+getAlluser()
+fetch('https://randomuser.me/api/').then(
+    (response)=>{
+        return response.json()
+    }
+).then((data)=>{
+    console.log(data)
+})
+.catch((error)=>console.log(error))
